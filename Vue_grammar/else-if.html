@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<title>if, else-if, else 连续判断</title>
+	</head>
+	<body>
+		<div id="app">
+		   <div v-if="type === 'A'"> A !</div>
+		   <div v-else-if="type === 'B'"> B !</div>
+		   <div v-else-if="type === 'C'"> C !</div>
+		   <div v-else> Not A/B/C !</div>
+		</div>
+		
+		<script>
+			var app = new Vue({
+			// element 缩写, 挂载元素
+			  el: '#app',
+			  
+			// 绑定 model
+			  data: {
+			    type: 'A' 
+			  }
+			})
+		</script>
+		
+	</body>
+</html>

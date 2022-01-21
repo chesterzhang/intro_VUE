@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<title>if-else 条件渲染</title>
+	</head>
+	<body>
+		<div id="app">
+		   <h1 v-if="awesome">Vue is awesome !</h1>
+		   <h1 v-else>Oh no !</h1>
+		</div>
+		
+		<script>
+			var app = new Vue({
+			// element 缩写, 挂载元素
+			  el: '#app',
+			  
+			// 绑定 model
+			  data: {
+			    awesome:true
+			  }
+			})
+		</script>
+		
+	</body>
+</html>

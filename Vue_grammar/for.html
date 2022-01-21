@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<title>for 循环 </title>
+	</head>
+	
+	<body>
+		<ul id="app">
+		   <li v-for="item in items">
+				{{item.message}}
+		   </li>
+		</ul>
+		
+		<script>
+			var app = new Vue({
+				// element 缩写, 挂载元素
+				el: '#app',
+			  
+				// 绑定 model
+				data:{
+					items: [ 
+						{message:'Foo'},
+						{message:'Bar'}
+						]
+				}
+				
+			})
+			  
+		</script>
+		
+	</body>
+</html>
