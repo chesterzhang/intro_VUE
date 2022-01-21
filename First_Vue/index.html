@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<title>第一个 Vue 应用</title>
+	</head>
+	<body>
+		<div id="app">
+		   {{ message }}
+		</div>
+		
+		<script>
+			var app = new Vue({
+			// element 缩写, 挂载元素
+			  el: '#app',
+			  
+			// 绑定 model
+			  data: {
+			    message: 'Hello Vue!'
+			  }
+			})
+		</script>
+		
+	</body>
+</html>
